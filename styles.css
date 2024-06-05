@@ -1,0 +1,183 @@
+body{
+    background-color: skyblue;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-evenly; 
+    /* background-color: #333;  */
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    padding-left: 600px;
+    font-size: 30px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none; 
+  }
+  
+  .navbar a:hover {
+    color: green;
+  }
+  .fab {
+    font-size: 24px; /* Adjust size as needed */
+    color: #333; /* Change color as needed */
+}
+.btnbox a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 100%;
+    background: padding-box;
+    /* border: 2px solid blue; */
+    border-radius: 200px;
+    font-size: 25px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 150px;
+}
+
+.btnbox a:hover
+{
+    color: black ;
+}
+
+.btnbox a:nth-child(2)
+{
+  background: transparent;
+}
+.btnbox a:nth-child(2)::before
+{
+    background:green ;
+}
+
+.btnbox a:nth-child(2):hover
+{
+    color: black;
+}
+
+
+.btnbox a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(102, 171, 226);
+    z-index: -1;
+    transition: .1s;
+}
+
+.btnbox a:hover::before
+{
+width: 100%;
+
+}
+.social-icons i
+{
+    color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px; 
+    font-size: 30px;   
+    transition: transform 0.5s;
+    margin-left: 70px;
+}
+
+.social-icons i:hover
+{
+    color: black;
+    transform:translatey(-5px);
+}
+  img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    margin-right: 30px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  }
+  
+ .homecontent
+{
+    margin-left: 200px;
+    margin-top: 100px;
+} 
+#h1{
+    font-size: 56px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px palegreen;
+    margin-top: 100px;
+}
+.homecontent h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px blue;
+    animation: moveText 3s ease infinite alternate; /* Apply the animation */
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translateX(10px); /* Start position */
+    }
+    to {
+      transform: translateX(50px); /* End position */
+    }
+  }
+  
+#about
+{
+    /* text-align: center; */
+    font-size: 30px;
+    margin-top: 220px;
+    margin-left: 50px;
+}
+.skillheading
+{
+    font-size: 50px;
+    /* text-align: center; */
+    color: black;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.skillcontent 
+{
+    /* text-align: center; */
+    font-size: 25px;
+    margin-left: 50px;
+}
+#projects
+{
+    /* text-align: center; */
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.desc{
+    font-size: 25px;
+}
+.desc2{
+    font-size: 25px;
+}
+#contact
+{
+    /* text-align: center; */
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.contactleft{
+    font-size: 25px;
+    margin-left: 20px;
+}
